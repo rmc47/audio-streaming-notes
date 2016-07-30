@@ -13,6 +13,7 @@
 
 ## Liquidsoap
 
+- Install both `liquidsoap` and `liquidsoap-plugin-all` to get the alsa plugins
 - Simple stream: `liquidsoap 'output.icecast(%vorbis.cbr(bitrate=320),host="foo",port=8000,password="bar",mount="liq.ogg",input.alsa(device="hw:sndrpiwsp"),fallible=true)'`
 
 ## Recording Icecast stream
