@@ -15,6 +15,7 @@
 
 - Install both `liquidsoap` and `liquidsoap-plugin-all` to get the alsa plugins
 - Simple stream: `liquidsoap 'output.icecast(%vorbis.cbr(bitrate=320),host="foo",port=8000,password="bar",mount="liq.ogg",input.alsa(device="hw:sndrpiwsp"),fallible=true)'`
+- Note: on Ubuntu (not Raspbian), https://bugs.launchpad.net/ubuntu/+source/liquidsoap/+bug/1404657 means having `liquidsoap-plugin-opus` installed breaks Ogg Vorbis encoding. Remove the package and vorbis comes back to life.
 
 ## Recording Icecast stream
 
